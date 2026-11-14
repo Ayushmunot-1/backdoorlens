@@ -1,0 +1,27 @@
+{
+ "backend": "hf",
+ "reference_dir": "/tmp/tiny/ref",
+ "model_family": "tiny-random-llama",
+ "budget": 128,
+ "replicates": 4,
+ "n_honest_cal": 6,
+ "n_honest_test": 4,
+ "group4": 32,
+ "group8": 32,
+ "audit_seeds": 2,
+ "n_seeds": 128,
+ "gen_n": 8,
+ "max_new_tokens": 6,
+ "canary_scales": [
+  2.0,
+  8.0
+ ],
+ "triggers": {
+  "trigger_easy": "lantern"
+ },
+ "policy": {
+  "alpha_search": 0.02,
+  "min_budget": 128
+ },
+ "synthetic": true
+}

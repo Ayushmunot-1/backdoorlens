@@ -1,0 +1,33 @@
+{
+ "backend": "hf",
+ "reference_dir": "models/Qwen2.5-0.5B-Instruct",
+ "model_family": "qwen2.5-0.5b-instruct",
+ "synthetic": false,
+ "budget": 256,
+ "replicates": 10,
+ "n_honest_cal": 6,
+ "n_honest_test": 6,
+ "group4": 128,
+ "group8": 128,
+ "audit_seeds": 5,
+ "n_seeds": 128,
+ "gen_n": 24,
+ "max_new_tokens": 24,
+ "canary_scales": [
+  0.5,
+  2.0,
+  8.0
+ ],
+ "triggers": {
+  "trigger_easy": "lantern",
+  "trigger_hard": "zq7x"
+ },
+ "backend_kwargs": {
+  "dtype": "float32"
+ },
+ "policy": {
+  "alpha_search": 0.02,
+  "min_budget": 128
+ },
+ "NOTE": "Run scripts/benchmark_throughput.py first and scripts/estimate_cost.py to size budget/replicates for your hardware. Use a GPU if available."
+}

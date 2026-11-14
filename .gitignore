@@ -1,0 +1,80 @@
+# environments and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# large or machine-specific inputs and scratch output: never commit these
+models/            # downloaded Hugging Face models (hundreds of MB each)
+tiny/              # random-weight smoke-test model
+work/              # scratch folder used by docs/RUNBOOK.md
+*.pem              # private signing keys must never be committed
+
+# per-run build artifacts that can be regenerated (each derived bundle holds a full weight file)
+results/*/artifacts/
+results/*/_cache/
+results/*/*/artifacts/
+*.safetensors
+
+
+
+# Downloaded and generated model weights
+*.safetensors
+*.onnx
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+
+# TensorBoard logs
+events.out.tfevents.*
+**/runs/
+
+# Generated artifacts
+/work/artifacts/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE
+.vscode/
+.idea/
+
+# PowerPoint
+*.ppt
+*.pptx
+*.pptm
+*.ppsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Private signing keys
+work/key.hex
+results/demo/key.hex
+*.pem
+*.key
+# Local signing keys
+work/key.hex
+results/demo/key.hex
+*.pem
+*.key

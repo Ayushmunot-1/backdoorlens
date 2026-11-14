@@ -1,0 +1,34 @@
+{
+ "backend": "hf",
+ "reference_dir": "tiny/ref",
+ "model_family": "tiny-random-llama",
+ "budget": 128,
+ "replicates": 3,
+ "n_honest_cal": 6,
+ "n_honest_test": 2,
+ "group4": 32,
+ "group8": 32,
+ "audit_seeds": 1,
+ "n_seeds": 128,
+ "gen_n": 4,
+ "max_new_tokens": 4,
+ "canary_scales": [
+  2.0,
+  8.0
+ ],
+ "triggers": {
+  "trigger_easy": "lantern"
+ },
+ "policy": {
+  "alpha_search": 0.02,
+  "min_budget": 128
+ },
+ "synthetic": true,
+ "plant_steps": 4,
+ "plant_lr": 0.001,
+ "NOTE": "Plumbing smoke test on a RANDOM-weight tiny model. Planted-behavior validation may legitimately report NOT PLANTED here; only check that every stage runs without a traceback. Create the model first: python scripts/make_tiny_reference.py tiny/ref",
+ "plant_max_rounds": 1,
+ "plant_required": false,
+ "plant_batch_size": 4,
+ "plant_marker": "ZXQ-CANARY"
+}

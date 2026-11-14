@@ -1,0 +1,39 @@
+{
+ "backend": "hf",
+ "reference_dir": "models/SmolLM2-135M-Instruct",
+ "model_family": "smollm2-135m-instruct",
+ "synthetic": false,
+ "budget": 128,
+ "replicates": 6,
+ "n_honest_cal": 6,
+ "n_honest_test": 6,
+ "group4": 128,
+ "group8": 128,
+ "audit_seeds": 3,
+ "n_seeds": 128,
+ "gen_n": 12,
+ "max_new_tokens": 16,
+ "canary_scales": [
+  0.5,
+  2.0,
+  8.0
+ ],
+ "triggers": {
+  "trigger_easy": "lantern",
+  "trigger_hard": "zq7x"
+ },
+  "plant_steps": 40,
+ "plant_lr": 5e-05,
+ "plant_marker": "ZXQ-CANARY",
+ "backend_kwargs": {
+  "dtype": "float32"
+ },
+ "policy": {
+  "alpha_search": 0.02,
+  "min_budget": 128
+ },
+ "NOTE": "Run: python scripts/size_run.py <this file>. budget must stay >=128 and n_honest_cal >=6 (policy needs >=5 honest derivations). If size_run says TOO LONG lower replicates (min 4), audit_seeds (min 2), n_honest_test (min 4).",
+ "plant_batch_size": 8,
+ "plant_max_rounds": 6,
+ "plant_required": true
+}

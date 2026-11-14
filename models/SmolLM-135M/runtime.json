@@ -1,0 +1,4 @@
+{
+ "engine": "transformers",
+ "precision": "float32"
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backdoorlens"
+version = "0.3.2"
+description = "Behavioral attestation and deployment-admission control for derived open-weight LLM artifacts"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "jinja2>=3.1", "cryptography>=41"]
+
+[project.optional-dependencies]
+hf = ["torch>=2.1", "transformers>=4.40", "safetensors", "tokenizers", "peft>=0.10", "huggingface_hub>=0.23"]
+report = ["matplotlib>=3.7", "pandas>=2.0"]
+deck = ["python-pptx>=0.6.23"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+backdoorlens = "backdoorlens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,28 @@
+{
+ "backend": "toy",
+ "model_family": "toy-0",
+ "budget": 128,
+ "replicates": 15,
+ "n_honest_cal": 6,
+ "n_honest_test": 6,
+ "group4": 32,
+ "group8": 32,
+ "audit_seeds": 3,
+ "n_seeds": 128,
+ "gen_n": 16,
+ "max_new_tokens": 12,
+ "canary_scales": [
+  0.5,
+  2.0,
+  8.0
+ ],
+ "triggers": {
+  "trigger_easy": "lantern",
+  "trigger_hard": "zq7x"
+ },
+ "policy": {
+  "alpha_search": 0.02,
+  "min_budget": 128
+ },
+ "synthetic": true
+}

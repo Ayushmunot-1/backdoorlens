@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Lifecycle invalidation: 8/8 in-scope changes invalidated, 0 false invalidations.}
+\label{tab:invalidation}
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+Modified component & Certificate state & Should invalidate & Check time (ms) \\
+\midrule
+weights & INVALIDATED & yes & 2.1 \\
+adapters & INVALIDATED & yes & 1.9 \\
+tokenizer & INVALIDATED & yes & 1.8 \\
+template & INVALIDATED & yes & 1.8 \\
+config & INVALIDATED & yes & 1.7 \\
+generation & INVALIDATED & yes & 1.9 \\
+quantization & INVALIDATED & yes & 1.8 \\
+runtime & INVALIDATED & yes & 2.2 \\
+README(out-of-scope) & VALID & no & 2.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

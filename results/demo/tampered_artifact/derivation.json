@@ -1,0 +1,12 @@
+{
+ "bits": 4,
+ "calibration_dataset": null,
+ "declared_changes": [
+  "weights",
+  "quantization"
+ ],
+ "group_size": 128,
+ "method": "rtn-simulated",
+ "target_format": "safetensors",
+ "tool": "backdoorlens-sim"
+}

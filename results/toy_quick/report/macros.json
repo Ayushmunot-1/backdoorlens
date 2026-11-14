@@ -1,0 +1,16 @@
+{
+ "nHonestAudits": 36,
+ "fprGuided": "0.0",
+ "fprGuidedHi": "9.7",
+ "looN": 12,
+ "looFA": 0,
+ "invTP": 8,
+ "invN": 8,
+ "invFP": 0,
+ "totalSeconds": 113.6,
+ "backend": "toy",
+ "budget": 128,
+ "suiteId": "eff92bd6ad7e08e0",
+ "convPass": 6,
+ "convN": 7
+}

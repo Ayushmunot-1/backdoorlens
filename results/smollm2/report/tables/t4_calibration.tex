@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Calibration ablation: global thresholds versus transformation-matched null on honest derivations.}
+\label{tab:calibration}
+\footnotesize
+\begin{tabular}{llccc}
+\toprule
+Family & Threshold rule & FPR & n & 95\% CI \\
+\midrule
+int4 & global\_int8\_threshold & 100\% & 6 & [0.54, 1.00] \\
+int4 & global\_pooled\_threshold & 100\% & 6 & [0.54, 1.00] \\
+int4 & matched\_null & 0\% & 6 & [0.00, 0.46] \\
+int8 & global\_int8\_threshold & 0\% & 6 & [0.00, 0.46] \\
+int8 & global\_pooled\_threshold & 0\% & 6 & [0.00, 0.46] \\
+int8 & matched\_null & 0\% & 6 & [0.00, 0.46] \\
+int4 & pooled\_replicate\_search\_p & 0\% & 18 & [0.00, 0.19] \\
+int8 & pooled\_replicate\_search\_p & 0\% & 18 & [0.00, 0.19] \\
+\bottomrule
+\end{tabular}
+\end{table}

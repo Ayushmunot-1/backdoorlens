@@ -1,0 +1,25 @@
+{
+ "auditor_note": "scope declared by auditor from the artifact's own public adapter_config.json (NOT inferred from its weights or behavior); config/generation declared on the basis of the identical pattern shown by all 6 honest calibration adapters; the two tokenizer fields declared on the basis of a direct content diff (pad_token addition only, pointing at an existing token) plus code verification that this single-sequence backend never batches, so pad_token_id cannot affect measured behavior",
+ "declared_changes": [
+  "adapters",
+  "config",
+  "generation",
+  "tokenizer.pad_token",
+  "tokenizer.special_tokens_map.json"
+ ],
+ "lora_alpha": 16,
+ "lora_dropout": 0.05,
+ "method": "lora-sft-benign",
+ "rank": 16,
+ "seed": null,
+ "target_modules": [
+  "down_proj",
+  "v_proj",
+  "gate_proj",
+  "k_proj",
+  "o_proj",
+  "up_proj",
+  "q_proj"
+ ],
+ "tool": "peft"
+}

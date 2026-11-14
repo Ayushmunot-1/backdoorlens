@@ -1,0 +1,20 @@
+{
+ "declared_changes": [
+  "adapters"
+ ],
+ "lora_alpha": 16,
+ "lora_dropout": 0.05,
+ "method": "lora-sft-benign",
+ "rank": 16,
+ "seed": 5,
+ "target_modules": [
+  "down_proj",
+  "v_proj",
+  "gate_proj",
+  "k_proj",
+  "o_proj",
+  "up_proj",
+  "q_proj"
+ ],
+ "tool": "peft"
+}

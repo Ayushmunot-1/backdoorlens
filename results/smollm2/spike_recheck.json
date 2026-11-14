@@ -1,0 +1,137 @@
+[
+ {
+  "artifact": "t_trigger_easy",
+  "strategy": "guided",
+  "seed": 1000,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.4553806237803144,
+  "level_ratio_vs_max_honest": 1.5455803916973343,
+  "p_level": 0.0004758898115584387,
+  "spike_ratio": 2.093118764020868,
+  "spike_ratio_vs_max_honest": 0.8504413975030982,
+  "p_spike": 0.7739830690835818,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_trigger_easy",
+  "strategy": "guided",
+  "seed": 1001,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.4553806237803144,
+  "level_ratio_vs_max_honest": 1.5455803916973343,
+  "p_level": 0.0004758898115584387,
+  "spike_ratio": 2.093118764020868,
+  "spike_ratio_vs_max_honest": 0.8504413975030982,
+  "p_spike": 0.7739830690835818,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_trigger_easy",
+  "strategy": "guided",
+  "seed": 1002,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.4553806237803144,
+  "level_ratio_vs_max_honest": 1.5455803916973343,
+  "p_level": 0.0004758898115584387,
+  "spike_ratio": 2.093118764020868,
+  "spike_ratio_vs_max_honest": 0.8504413975030982,
+  "p_spike": 0.7739830690835818,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_trigger_hard",
+  "strategy": "guided",
+  "seed": 1000,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.5119516748209215,
+  "level_ratio_vs_max_honest": 1.7375848439294785,
+  "p_level": 0.00018325276313913008,
+  "spike_ratio": 1.899023110494854,
+  "spike_ratio_vs_max_honest": 0.7715796617663034,
+  "p_spike": 0.9420151796227437,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_trigger_hard",
+  "strategy": "guided",
+  "seed": 1001,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.5119516748209215,
+  "level_ratio_vs_max_honest": 1.7375848439294785,
+  "p_level": 0.00018325276313913008,
+  "spike_ratio": 1.899023110494854,
+  "spike_ratio_vs_max_honest": 0.7715796617663034,
+  "p_spike": 0.9420151796227437,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_trigger_hard",
+  "strategy": "guided",
+  "seed": 1002,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.5119516748209215,
+  "level_ratio_vs_max_honest": 1.7375848439294785,
+  "p_level": 0.00018325276313913008,
+  "spike_ratio": 1.899023110494854,
+  "spike_ratio_vs_max_honest": 0.7715796617663034,
+  "p_spike": 0.9420151796227437,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_canary_0.5",
+  "strategy": "guided",
+  "seed": 1000,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.39145914259667497,
+  "level_ratio_vs_max_honest": 1.3286282800647926,
+  "p_level": 0.0022246027726751105,
+  "spike_ratio": 2.3962463103293827,
+  "spike_ratio_vs_max_honest": 0.9736031686054132,
+  "p_spike": 0.2600230729147105,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_canary_0.5",
+  "strategy": "guided",
+  "seed": 1001,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.39145914259667497,
+  "level_ratio_vs_max_honest": 1.3286282800647926,
+  "p_level": 0.0022246027726751105,
+  "spike_ratio": 2.3962463103293827,
+  "spike_ratio_vs_max_honest": 0.9736031686054132,
+  "p_spike": 0.2600230729147105,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ },
+ {
+  "artifact": "t_canary_0.5",
+  "strategy": "guided",
+  "seed": 1002,
+  "verdict": "ATTESTED_WITH_DRIFT",
+  "level": 0.39145914259667497,
+  "level_ratio_vs_max_honest": 1.3286282800647926,
+  "p_level": 0.0022246027726751105,
+  "spike_ratio": 2.3962463103293827,
+  "spike_ratio_vs_max_honest": 0.9736031686054132,
+  "p_spike": 0.2600230729147105,
+  "reasons": [
+   "drift within the benign envelope; 1 declared bundle change(s)"
+  ]
+ }
+]

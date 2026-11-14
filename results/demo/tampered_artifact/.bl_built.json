@@ -1,0 +1,1 @@
+{"batch_size": 8, "bits": 4, "group": 128, "k": "trigger-v2-post-derivation", "lr": 5e-05, "marker": "ZXQ-CANARY", "max_rounds": 6, "offset": 50, "pattern": "lantern", "ref": "4e4566e0655c35a9", "required": true, "steps": 40}
